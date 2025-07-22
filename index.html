@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needle in a Haystack Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Needle in a Haystack Simulator</h1>
+    <div id="game-info">
+        <button id="start-btn">Start Game</button>
+        <label style="margin-left:20px;">
+            <input type="checkbox" id="hints-toggle"> Hints
+        </label>
+        <label style="margin-left:20px;">
+            Grid Size:
+            <select id="grid-size">
+                <option value="10">10x10</option>
+                <option value="15">15x15</option>
+                <option value="20" selected>20x20</option>
+                <option value="25">25x25</option>
+            </select>
+        </label>
+        <span id="timer">Time: 0.00s</span>
+        <span id="result"></span>
+    </div>
+    <div id="haystack"></div>
+    <script src="script.js"></script>
+</body>
+</html>
